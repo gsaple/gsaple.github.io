@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #edd4bd;
+  font-family: "Didact Gothic", sans-serif;
+  min-width: 320px;
+  color: #777;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+.transition {
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.border {
+  border-radius: 20px 70px 30px 70px / 30px 40px 70px 40px;
+  -moz-border-radius: 20px 70px 30px 70px / 30px 40px 70px 40px;
+  -webkit-border-radius: 20px 70px 30px 70px / 30px 40px 70px 40px;
+}
+
+::selection {
+  background: transparent;
+  color: #bc9d81;
+}
+
+.flyer {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.nav-container {
+  background: url(../images/backgrounds/px1.png);
+}
+
+.nav-menu {
+  padding: 20px;
+}
+
+.logo-wrapper {
+  position: relative;
+  padding-top: 50%;
+  width: 100%;
+}
+
+.aspect-ratio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-wrapper img {
+  border-radius: 20px 70px 0px 0px / 30px 40px 0px 0px;
+  -moz-border-radius: 20px 70px 0px 0px / 30px 40px 0px 0px;
+  -webkit-border-radius: 20px 70px 0px 0px / 30px 40px 0px 0px;
+}
+
+.nav-menu li {
+  list-style: none;
+  border-bottom: 1px solid #b6caae;
+}
+
+.nav-menu li:last-child {
+  border-bottom: transparent;
+}
+
+.nav-text {
+  display: block;
+  text-decoration: none;
+  font-family: "Baloo Bhaijaan", cursive;
+  font-weight: 400;
+  color: #fff3e0;
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a:hover,
+.current-page {
+  color: #dc948b;
+}
+
+.nav-icon:before {
+  font-family: FontAwesome;
+  content: "\f1d8";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+}
+
+.window {
+  background: url(../images/backgrounds/px2.png);
+  padding: 20px 20px 50px 19px;
+  position: relative;
+}
+
+.slides-show {
+  position: relative;
+  padding-top: 52.63%;
+  width: 100%;
+}
+
+.slide-wrapper {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  font-family: "Baloo Bhaijaan", cursive;
+  color: #fff3e0;
+  padding-left: 15px;
+}
+
+.slide-indicator {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #fff3e0;
+  border: 1px solid #fff3e0;
+  margin: 0 3px;
+  border-radius: 50%;
+}
+
+.dot:hover,
+.dot.active {
+  background: #aec5a5;
+  border: 1px solid #aec5a5;
+}
