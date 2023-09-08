@@ -102,9 +102,8 @@ body {
   color: #dc948b;
 }
 
-.nav-icon:before {
+.fa-paper-plane::before {
   font-family: FontAwesome;
-  content: "\f1d8";
   position: absolute;
   right: 0;
   top: 0;
