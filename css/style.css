@@ -116,15 +116,10 @@ body {
   position: relative;
 }
 
-.slides-show {
+#slides-show {
   position: relative;
   padding-top: 52.63%;
   width: 100%;
-}
-
-.slide-wrapper {
-  opacity: 0;
-  transition: opacity 0.5s ease-in;
 }
 
 .caption {
