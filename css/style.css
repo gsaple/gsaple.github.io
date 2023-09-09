@@ -151,3 +151,116 @@ body {
   background: #aec5a5;
   border: 1px solid #aec5a5;
 }
+
+section {
+  background: #ffeed4;
+  margin-top: 35px;
+  padding-bottom: 90px;
+}
+
+.info {
+  background: #ffeed4;
+  padding: 90px 0;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+}
+
+p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+h5 {
+  color: #dc948b;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: "Baloo Bhaijaan", cursive;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+.welcome-text {
+  flex-basis: 50%;
+}
+
+.welcome-image {
+  flex-basis: 50%;
+}
+
+.welcome_title {
+  position: relative;
+  font-size: 32px;
+  line-height: 40px;
+  font-family: "Baloo Bhaijaan", cursive;
+  color: #aec5a5;
+  margin-bottom: 20px;
+}
+
+.welcome_title:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #aec5a5;
+  width: 30px;
+  bottom: 0;
+  left: 0;
+}
+
+.welcome-image img {
+  width: 100%;
+}
+
+footer {
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #bc9d81;
+  font-size: 18px;
+  font-family: "Baloo Bhaijaan", cursive;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+}
+
+.icon {
+  margin: 4px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffeed4;
+  border-radius: 50%;
+  background-color: #aec5a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon a {
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.icon-glyph::before {
+  font-family: FontAwesome;
+  color: #ffeed4;
+}
+
+.icon:nth-child(even) {
+  background-color: #da9188;
+}
+
+.copyright {
+  padding-top: 20px;
+  color: #fff3e0;
+}
