@@ -40,6 +40,40 @@ body {
   color: #bc9d81;
 }
 
+.icon-glyph::before {
+  color: #ffeed4;
+  font-size: 24px;
+}
+
+.phone-menu-wrapper {
+  display: none;
+  background-color: #aec5a5;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 90;
+  top: 0;
+}
+
+.phone-menu-icons {
+  display: flex;
+  justify-content: space-between;
+  background: #aec5a5;
+  list-style: none;
+  padding: 2px 5px;
+}
+
+.phone-menu {
+  list-style: none;
+  padding: 100px 10px;
+  position: fixed;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(174, 197, 165, 0.95); */
+  background-color: rgba(0, 77, 74, 0.9);
+}
+
 .flyer {
   margin-top: 32px;
   margin-bottom: 20px;
@@ -98,6 +132,7 @@ body {
 }
 
 .nav-menu a:hover,
+.phone-menu a:hover,
 .current-page {
   color: #dc948b;
 }
@@ -247,13 +282,7 @@ footer {
   text-decoration: none;
   width: 24px;
   height: 24px;
-  font-size: 24px;
   text-align: center;
-}
-
-.icon-glyph::before {
-  font-family: FontAwesome;
-  color: #ffeed4;
 }
 
 .icon:nth-child(even) {

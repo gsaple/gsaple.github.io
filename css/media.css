@@ -139,7 +139,6 @@
   }
 }
 
-/* TODO: full screen mobile menu */
 @media (max-width: 480px) {
   .nav-text {
     font-size: 18px;
@@ -147,9 +146,25 @@
     padding: 5px 20px 5px 0px;
   }
 
+  .flyer {
+    display: none;
+  }
+
+  .phone-menu-wrapper {
+    display: block;
+  }
+
+  .phone-menu {
+    display: none;
+  }
+
+  section {
+    margin: 0;
+  }
+
   .info {
     flex-direction: column;
-    margin: 0 72.5px;
+    margin: 0 20px;
     row-gap: 30px;
   }
 }
