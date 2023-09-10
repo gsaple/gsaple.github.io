@@ -45,6 +45,7 @@ body {
   font-size: 24px;
 }
 
+/* {{{ phone menu */
 .phone-menu-wrapper {
   display: none;
   background-color: #aec5a5;
@@ -73,7 +74,9 @@ body {
   /* background-color: rgba(174, 197, 165, 0.95); */
   background-color: rgba(0, 77, 74, 0.9);
 }
+/* }}}*/
 
+/* {{{ flyer */
 .flyer {
   margin-top: 32px;
   margin-bottom: 20px;
@@ -144,7 +147,9 @@ body {
   top: 0;
   font-size: 16px;
 }
+/* }}} */
 
+/* {{{ slide window */
 .window {
   background: url(../images/backgrounds/px2.png);
   padding: 20px 20px 50px 19px;
@@ -186,7 +191,9 @@ body {
   background: #aec5a5;
   border: 1px solid #aec5a5;
 }
+/* }}} */
 
+/* {{{ section */
 section {
   background: #ffeed4;
   margin-top: 35px;
@@ -250,7 +257,9 @@ h5 {
 .welcome-image img {
   width: 100%;
 }
+/* }}}*/
 
+/* {{{ footer */
 footer {
   padding: 40px 20px 20px 20px;
   display: flex;
@@ -293,3 +302,4 @@ footer {
   padding-top: 20px;
   color: #fff3e0;
 }
+/* }}}*/
