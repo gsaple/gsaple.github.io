@@ -13,7 +13,7 @@ function showSlide(clickedIndex) {
   }
   const slides = document.getElementById("slides-show");
   const { path, caption } = images[clickedIndex];
-  const alt = `slide + ${clickedIndex + 1}` + ".jpg";
+  const alt = `slide ${clickedIndex + 1}`;
   if (slides.children.length === 0) {
     const defaultImage = document.createElement("img");
     defaultImage.src = path;
