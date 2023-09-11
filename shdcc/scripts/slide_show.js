@@ -1,19 +1,18 @@
 const dots = document.querySelectorAll(".dot");
-let slideIndex = 0;
+let currentIndex = 0;
 const images = [
   { path: "images/slides/1.png", caption: "Little Ones' Sanctuary" },
   { path: "images/slides/2.png", caption: "Heartland of Childhood" },
   { path: "images/slides/3.png", caption: "Creative Minds Grow" },
 ];
 
-function showSlide(clickedIndex) {
-  if (clickedIndex >= 3) {
-    slideIndex = 0;
-    clickedIndex = 0;
+function showSlide(nextIndex) {
+  if (nextIndex >= 3) {
+    nextIndex = 0;
   }
   const slides = document.getElementById("slides-show");
-  const { path, caption } = images[clickedIndex];
-  const alt = `slide ${clickedIndex + 1}`;
+  const { path, caption } = images[nextIndex];
+  const alt = `slide ${nextIndex + 1}`;
   if (slides.children.length === 0) {
     const defaultImage = document.createElement("img");
     defaultImage.src = path;
@@ -25,6 +24,8 @@ function showSlide(clickedIndex) {
     defaultCaption.classList.add("caption", "transition");
     slides.appendChild(defaultCaption);
   } else {
+    if (currentIndex === nextIndex) return; /* click the same picture */
+    currentIndex = nextIndex;
     const [currentImage] = slides.getElementsByTagName("img");
     const [currentCaption] = slides.getElementsByTagName("div");
     slides.style.opacity = 0;
@@ -36,7 +37,7 @@ function showSlide(clickedIndex) {
     }, 300);
   }
   dots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === clickedIndex);
+    dot.classList.toggle("active", i === nextIndex);
   });
 }
 
@@ -45,8 +46,9 @@ dots.forEach((dot, i) => {
     showSlide(i);
   });
 });
-showSlide(slideIndex);
 
-/* setInterval(() => {
-  showSlide(++slideIndex);
-}, 10000); */
+showSlide(currentIndex);
+
+setInterval(() => {
+  showSlide(currentIndex + 1);
+}, 5000);
