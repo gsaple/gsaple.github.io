@@ -1,9 +1,9 @@
 const dots = document.querySelectorAll(".dot");
 let slideIndex = 0;
 const images = [
-  { path: "images/slides/1.jpg", caption: "Little Ones' Sanctuary" },
-  { path: "images/slides/2.jpg", caption: "Heartland of Childhood" },
-  { path: "images/slides/3.jpg", caption: "Creative Minds Grow" },
+  { path: "images/slides/1.png", caption: "Little Ones' Sanctuary" },
+  { path: "images/slides/2.png", caption: "Heartland of Childhood" },
+  { path: "images/slides/3.png", caption: "Creative Minds Grow" },
 ];
 
 function showSlide(clickedIndex) {
