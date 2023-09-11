@@ -42,7 +42,7 @@ body {
 
 .icon-glyph::before {
   color: #ffeed4;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 /* {{{ phone menu */
@@ -60,19 +60,19 @@ body {
   justify-content: space-between;
   background: #aec5a5;
   list-style: none;
-  padding: 2px 5px;
+  padding: 16px;
 }
 
 .phone-menu {
   list-style: none;
   padding: 100px 10px;
   position: fixed;
-  top: 30px;
+  top: 65px;
   bottom: 0;
   left: 0;
   right: 0;
-  /* background-color: rgba(174, 197, 165, 0.95); */
-  background-color: rgba(0, 77, 74, 0.9);
+  background-color: rgba(174, 197, 165, 0.95);
+  /* background-color: rgba(0, 77, 74, 0.9); */
 }
 /* }}}*/
 
