@@ -40,11 +40,6 @@ body {
   color: #bc9d81;
 }
 
-.icon-glyph::before {
-  color: #ffeed4;
-  font-size: 32px;
-}
-
 /* {{{ phone menu */
 .phone-menu-wrapper {
   display: none;
@@ -61,6 +56,11 @@ body {
   background: #aec5a5;
   list-style: none;
   padding: 16px;
+}
+
+.phone-menu-icons i::before {
+  color: #ffeed4;
+  font-size: 32px;
 }
 
 .phone-menu {
@@ -285,6 +285,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-glyph::before {
+  color: #ffeed4;
+  font-size: 24px;
 }
 
 .icon a {
