@@ -238,7 +238,6 @@ h5 {
 }
 
 .section-title {
-  position: relative;
   font-size: 32px;
   line-height: 40px;
   font-family: "Baloo Bhaijaan", cursive;
@@ -246,13 +245,17 @@ h5 {
   margin-bottom: 20px;
 }
 
-.section-title:after {
+.first-letter {
+  position: relative;
+}
+
+.first-letter:after {
   content: "";
   position: absolute;
   height: 3px;
   background: #aec5a5;
-  width: 30px;
-  bottom: 0;
+  width: 100%;
+  bottom: 4px;
   left: 0;
 }
 /* }}}*/
