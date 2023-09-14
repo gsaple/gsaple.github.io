@@ -1,3 +1,4 @@
+/* {{{ global */
 *,
 *::before,
 *::after {
@@ -39,6 +40,7 @@ body {
   background: transparent;
   color: #bc9d81;
 }
+/* }}}*/
 
 /* {{{ phone menu */
 .phone-menu-wrapper {
