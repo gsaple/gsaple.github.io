@@ -229,15 +229,15 @@ h5 {
   text-align: justify;
 }
 
-.welcome-text {
+.flex-even {
   flex-basis: 50%;
 }
 
-.welcome-image {
-  flex-basis: 50%;
+.welcome-image img {
+  width: 100%;
 }
 
-.welcome_title {
+.section-title {
   position: relative;
   font-size: 32px;
   line-height: 40px;
@@ -246,7 +246,7 @@ h5 {
   margin-bottom: 20px;
 }
 
-.welcome_title:after {
+.section-title:after {
   content: "";
   position: absolute;
   height: 3px;
@@ -254,10 +254,6 @@ h5 {
   width: 30px;
   bottom: 0;
   left: 0;
-}
-
-.welcome-image img {
-  width: 100%;
 }
 /* }}}*/
 
