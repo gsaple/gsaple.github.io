@@ -212,6 +212,14 @@ section {
   column-gap: 30px;
 }
 
+.second-row {
+  padding: 0 0 90px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
 p {
   font-family: "Didact Gothic", sans-serif;
   font-size: 18px;
@@ -233,7 +241,15 @@ h5 {
   flex-basis: 50%;
 }
 
-.welcome-image img {
+.flex-thirty {
+  flex-basis: 30%;
+}
+
+.flex-seventy {
+  flex-basis: 70%;
+}
+
+.info img {
   width: 100%;
 }
 
