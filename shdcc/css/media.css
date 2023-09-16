@@ -168,3 +168,15 @@
     row-gap: 30px;
   }
 }
+
+@media (max-width: 767px) {
+  .left.transform {
+    transform: none;
+  }
+  .right.transform {
+    transform: none;
+  }
+  .info > .move {
+    transition: none;
+  }
+}

@@ -212,6 +212,28 @@ section {
   column-gap: 30px;
 }
 
+.no-gap {
+  column-gap: 0px;
+}
+
+.info > .move {
+  transition: transform 0.8s linear;
+  -moz-transition: transform 0.8s linear;
+  -webkit-transition: all 0.8s linear;
+  -o-transition: transform 0.8s linear;
+  opacity: 0;
+}
+
+.left.transform {
+  transform: translateX(-15px);
+  opacity: 1;
+}
+
+.right.transform {
+  transform: translateX(15px);
+  opacity: 1;
+}
+
 .second-row {
   padding: 0 0 90px;
 }
